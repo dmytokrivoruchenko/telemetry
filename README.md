@@ -1,2 +1,2 @@
-# telemetry
-its test project telemetry
+click here -->
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
