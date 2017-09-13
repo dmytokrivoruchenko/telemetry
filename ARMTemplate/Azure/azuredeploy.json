@@ -50,7 +50,7 @@
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": "https://bitbucket.org/dmytro_krivoruchenko/mytest"
+      "defaultValue": "https://github.com/dmytokrivoruchenko/telemetry/tree/master/src"
     },
     "branch": {
       "type": "string",
@@ -93,7 +93,8 @@
     "webWorkerCount": 2,
     "webWorkerSize": 0,
     "storageKeyType": "SharedAccessKey",
-    "storageKey" : "f34b903ff4907b443cc10f85bb3e6ccfd4d960de"
+    "storageKey" : "f34b903ff4907b443cc10f85bb3e6ccfd4d960de",
+    "rep" : "https://github.com/dmytokrivoruchenko/telemetry/tree/master/src"
   },
   "resources": [
    {
@@ -348,8 +349,8 @@
               "value": "[concat('Server=tcp:', variables('sqlServerName'), '.database.windows.net,1433;Initial Catalog=telemetry;Persist Security Info=False;User ID=', variables('sqlLog'), ';Password=', variables('sqlPas'), ';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]",
               "type": "SQLServer"
             },
-            "repoUrl":"[parameters('repoUrl')]",
-            "branch":"[parameters('branch')]",
+            "repoUrl":"[parameters('rep')]",
+            "branch":"master",
             "isManualIntegration": true
           }
         }
