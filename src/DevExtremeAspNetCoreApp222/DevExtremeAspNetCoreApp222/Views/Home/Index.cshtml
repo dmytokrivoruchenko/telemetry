@@ -1,0 +1,19 @@
+﻿<h2>Home</h2>
+@using Microsoft.SharePoint;
+@using System;
+@using DevExtremeAspNetCoreApp222.Models;
+@{
+    string findGuid = "";
+    SPSite oSpSite = new SPSite("http://ws205:46486/terex/");
+
+    //Connect to the web using SPWeb object
+    SPWeb oSPWeb = oSpSite.OpenWeb();
+
+    //List Object to get the list from a sharepoint site
+    SPList oSpList = oSPWeb.Lists["SupplierMappers"];
+
+    //Item Collection Object getting all the items form the list
+    SPListItemCollection oSpListCln = oSpList.Items;
+
+
+}
